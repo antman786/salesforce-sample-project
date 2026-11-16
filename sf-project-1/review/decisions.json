@@ -1,0 +1,2822 @@
+[
+  {
+    "entityKey": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+    "action": "source",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:51:31.100Z",
+    "note": "Added \"Statement of Work (SOW)  Salesforce Sales & Service Cloud Implementation\" (4.9 KB)",
+    "before": null,
+    "after": {
+      "path": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+      "kind": "sow",
+      "size": 5036
+    }
+  },
+  {
+    "entityKey": "P-0003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (personas), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "P-0003: System administrator",
+      "version": 1,
+      "aliases": [
+        "Salesforce System Administrator"
+      ],
+      "data": {
+        "role": "Maintain the technical platform and manage ongoing system administration.",
+        "goals": [
+          "Manage CRM platform configuration",
+          "Handle data extraction and maintenance",
+          "Provide post-go-live support"
+        ],
+        "behaviors": [
+          "Extract data for migration",
+          "Act as a technical counterpart to the consultant team"
+        ],
+        "characteristics": [
+          "Internal technical owner"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "personas",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Context\nThis user acts as the technical lead within the client organization. They work closely with the consultants during implementation and assume full responsibility for the system after the project concludes.\n\n## Frustrations\nManaging complex legacy data and transitioning from fragmented systems.\n\n## Evidence\n- \"Salesforce System Administrator (Liam O'Connor): Technical counterpart, data extraction owner, and post-go-live admin.\""
+    }
+  },
+  {
+    "entityKey": "COMP-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (systems), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "COMP-0001: Salesforce Sales Cloud",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "responsibility": "Manage sales accounts, contacts, opportunities, and lead routing.",
+        "tech_layer": "service",
+        "status": "building",
+        "product": "Salesforce Sales Cloud"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0006"
+        },
+        {
+          "type": "supports_feature",
+          "target": "FEAT-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nA new CRM platform being implemented to centralize sales data and automate quote-to-close approval workflows.\n\n## Evidence\n- \"Vanguard Logistics & Supply Co. (\"Client\") has engaged Apex Cloud Partners LLC (\"Consultant\") to implement Salesforce Sales Cloud and Service Cloud.\"\n- \"Configuration of Leads, Accounts, Contacts, Opportunities, and Products/Pricebooks (1 standard pricebook). Automated lead assignment rules and 1 multi-step discount approval flow.\""
+    }
+  },
+  {
+    "entityKey": "DD-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (design), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "DD-0001: No custom code development",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "problem": "The scope of the Salesforce implementation needs to be defined to ensure project delivery within the 10-week timeline and fixed-fee budget, preventing uncontrolled growth of complexity.",
+        "recommendation": "Use declarative Salesforce configuration only; custom Apex triggers, Lightning Web Components, and Visualforce pages are strictly out of scope.",
+        "rationale": "By relying on standard platform capabilities, the project can maintain a predictable delivery schedule and stay within the agreed fixed-fee structure.",
+        "implementation_impact": "All business requirements must be satisfied using standard objects, flows, and out-of-the-box Salesforce features."
+      },
+      "links": [
+        {
+          "type": "affects_component",
+          "target": "COMP-0001"
+        },
+        {
+          "type": "affects_component",
+          "target": "COMP-0002"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "design",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Consequences\nThis rules out highly customized UI or complex backend logic that requires programmatic intervention, ensuring maintainability by a standard System Administrator.\n\n## Status\nAccepted\n\n## Evidence\n- \"Custom Apex triggers, Lightning Web Components (LWCs), or Visualforce pages.\""
+    }
+  },
+  {
+    "entityKey": "SOWD-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (contract), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "SOWD-0002: Sales Cloud",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "milestone": "Build & Configure"
+      },
+      "links": [
+        {
+          "type": "part_of_sow",
+          "target": "SOW-0001"
+        },
+        {
+          "type": "delivered_by",
+          "target": "EPIC-0001"
+        },
+        {
+          "type": "integrates",
+          "target": "COMP-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "contract",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nConfiguration of Leads, Accounts, Contacts, Opportunities, and Products/Pricebooks (1 standard pricebook). Automated lead assignment rules and 1 multi-step discount approval flow.\n\n## Evidence\n- \"Configuration of Leads, Accounts, Contacts, Opportunities, and Products/Pricebooks (1 standard pricebook). Automated lead assignment rules and 1 multi-step discount approval flow.\""
+    }
+  },
+  {
+    "entityKey": "C-004",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (capabilities), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "C-004: Ability to monitor business performance metrics",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "business_value": "Provide executive leadership with real-time pipeline visibility and SLA compliance status.",
+        "priority": "must"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "capabilities",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Statement\nAbility to generate real-time visibility into sales pipelines and service level agreement compliance.\n\n## What this unblocks\nProvides executive leadership with oversight that is not currently mentioned as accessible or real-time.\n\n## Evidence\n- \"Provide executive leadership with real-time pipeline visibility and SLA compliance dashboards.\""
+    }
+  },
+  {
+    "entityKey": "C-003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (capabilities), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "C-003: Ability to manage customer support cases",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "business_value": "Replace an outdated ticketing system.",
+        "priority": "must",
+        "maturity_level": 0
+      },
+      "links": [
+        {
+          "type": "decomposes_into",
+          "target": "EPIC-0002"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "capabilities",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Statement\nAbility to receive, track, and escalate customer support cases via email and web channels.\n\n## What this unblocks\nReplaces the currently outdated ticketing system used by the support team.\n\n## Current maturity\nThe organization currently uses an outdated ticketing system.\n\n## Evidence\n- \"The objective is to replace fragmented legacy spreadsheets and an outdated ticketing system\"\n- \"Deploy Service Cloud (Email-to-Case and Web-to-Case) for a 20-agent customer support team.\""
+    }
+  },
+  {
+    "entityKey": "SOWD-0003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (contract), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "SOWD-0003: Service Cloud",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "milestone": "Build & Configure"
+      },
+      "links": [
+        {
+          "type": "part_of_sow",
+          "target": "SOW-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "contract",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nConfiguration of Cases, Entitlements/Milestones (2 SLA tiers), Email-to-Case (up to 3 support addresses), and 1 Web-to-Case form.\n\n## Evidence\n- \"Configuration of Cases, Entitlements/Milestones (2 SLA tiers), Email-to-Case (up to 3 support addresses), and 1 Web-to-Case form.\""
+    }
+  },
+  {
+    "entityKey": "OPP-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (opportunities), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "OPP-0001: Fragmented legacy systems hinder sales productivity",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "scope": "Sales"
+      },
+      "links": [
+        {
+          "type": "target_persona",
+          "target": "P-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "opportunities",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Problem\nSales representatives currently struggle with fragmented legacy spreadsheets, which makes managing daily work difficult.\n\n## Hypothesized value\nIf this is addressed, the team will benefit from a unified platform that centralizes account, contact, and opportunity data.\n\n## Evidence\n- \"The objective is to replace fragmented legacy spreadsheets and an outdated ticketing system with a unified Customer Relationship Management (CRM) platform.\""
+    }
+  },
+  {
+    "entityKey": "OPP-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (opportunities), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "OPP-0002: Outdated ticketing system slows support response",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "scope": "Customer support"
+      },
+      "links": [
+        {
+          "type": "target_persona",
+          "target": "P-0002"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "opportunities",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Problem\nThe customer support team uses an outdated ticketing system to handle customer cases.\n\n## Hypothesized value\nIf this is addressed, the team will gain a unified CRM platform for managing support cases, measured by the implementation of Email-to-Case and Web-to-Case functionality.\n\n## Evidence\n- \"The objective is to replace fragmented legacy spreadsheets and an outdated ticketing system with a unified Customer Relationship Management (CRM) platform.\""
+    }
+  },
+  {
+    "entityKey": "PERSON-0005",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (people), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "PERSON-0005: Elena Rostova",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Product Owner / Project Lead, Director of Revenue Operations",
+        "organization": "Vanguard Logistics & Supply Co.",
+        "expertise_areas": [
+          "day-to-day decision making",
+          "UAT coordination",
+          "SME facilitation"
+        ],
+        "influence_level": "medium"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nDay-to-day decision-maker, UAT coordinator, and SME facilitator for the client team.\n\n## Evidence\n- \"Product Owner / Project Lead (Elena Rostova, Director of Revenue Operations): Day-to-day decision-maker, UAT coordinator, and SME facilitator.\""
+    }
+  },
+  {
+    "entityKey": "EPIC-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (hierarchy), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "EPIC-0002: Service Cloud Configuration",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "theme": "Support",
+        "origin": "client-stated"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "hierarchy",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nImplementation of case management, service level agreements, and support communication channels.\n\n## Evidence\n- \"Configuration of Cases, Entitlements/Milestones (2 SLA tiers), Email-to-Case (up to 3 support addresses), and 1 Web-to-Case form.\""
+    }
+  },
+  {
+    "entityKey": "COMP-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (systems), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "COMP-0002: Salesforce Service Cloud",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "responsibility": "Manage customer support cases and service level agreements.",
+        "tech_layer": "service",
+        "status": "building",
+        "product": "Salesforce Service Cloud"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0006"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nA new service platform providing Email-to-Case and Web-to-Case capabilities for the support team.\n\n## Evidence\n- \"Deploy Service Cloud (Email-to-Case and Web-to-Case) for a 20-agent customer support team.\"\n- \"Configuration of Cases, Entitlements/Milestones (2 SLA tiers), Email-to-Case (up to 3 support addresses), and 1 Web-to-Case form.\""
+    }
+  },
+  {
+    "entityKey": "PERSON-0003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (people), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "PERSON-0003: Priya Nair",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Senior Salesforce Consultant",
+        "organization": "Apex Cloud Partners LLC",
+        "expertise_areas": [
+          "configuration",
+          "Flows",
+          "data migration",
+          "training"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nHandles hands-on configuration, Flows, data migration, and training for the consultant team.\n\n## Evidence\n- \"Senior Salesforce Consultant (Priya Nair): Hands-on configuration, Flows, data migration, and training.\""
+    }
+  },
+  {
+    "entityKey": "INIT-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (hierarchy), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "INIT-0001: Project Horizon CRM Implementation",
+      "version": 1,
+      "aliases": [
+        "CRM Transformation"
+      ],
+      "data": {
+        "business_value": "Unify sales and support operations into a single CRM platform to increase efficiency and data visibility.",
+        "timeline": "10 Weeks",
+        "dependencies": [
+          "Client providing clean, deduplicated CSV exports by Week 5"
+        ]
+      },
+      "links": [
+        {
+          "type": "decomposes_into",
+          "target": "C-001"
+        },
+        {
+          "type": "decomposes_into",
+          "target": "C-002"
+        },
+        {
+          "type": "decomposes_into",
+          "target": "C-003"
+        },
+        {
+          "type": "decomposes_into",
+          "target": "C-004"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "hierarchy",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Objective\nImplement Salesforce Sales Cloud and Service Cloud for 65 users at Vanguard Logistics & Supply Co.\n\n## Evidence\n- \"Project Name: Project Horizon – CRM Transformation\"\n- \"The estimated duration of this engagement is 10 Weeks from the Project Kick-off date.\""
+    }
+  },
+  {
+    "entityKey": "SOWD-0007",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (contract), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "SOWD-0007: Enablement & Go-Live",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "milestone": "Train & Deploy"
+      },
+      "links": [
+        {
+          "type": "part_of_sow",
+          "target": "SOW-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "contract",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nTrain-the-Trainer documentation, 2 live virtual training sessions (Sales & Service), UAT support, and 2 weeks of post-go-live Hypercare.\n\n## Evidence\n- \"Train-the-Trainer documentation, 2 live virtual training sessions (Sales & Service), UAT support, and 2 weeks of post-go-live Hypercare.\""
+    }
+  },
+  {
+    "entityKey": "SOW-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (contract), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "SOW-0001: Statement of Work (SOW): Salesforce Sales & Service Cloud Implementation v1.0",
+      "version": 1,
+      "aliases": [
+        "Project Horizon – CRM Transformation"
+      ],
+      "data": {
+        "effective_date": "2026-11-16",
+        "scope_summary": "Apex Cloud Partners LLC will implement Salesforce Sales Cloud and Service Cloud for Vanguard Logistics & Supply Co. to unify their CRM platform. The scope includes core platform configuration, sales and service cloud modules, automation flows, data migration, and training/hypercare services.",
+        "out_of_scope": [
+          "Custom Apex triggers, Lightning Web Components (LWCs), or Visualforce pages",
+          "Bidirectional ERP or WMS (Warehouse Management System) API integrations",
+          "Salesforce CPQ, Marketing Cloud, or Experience Cloud portals",
+          "Historical data migration older than 12 months for Cases or Closed/Lost Opportunities"
+        ],
+        "acceptance_criteria": [
+          "Client will provide clean, deduplicated CSV exports for data migration no later than Week 5",
+          "Client stakeholders will commit 4–6 hours per week during Discovery and UAT phases"
+        ],
+        "change_control": "Any requests falling outside Section 2.1 will be evaluated via a formal Change Request (CR) detailing schedule and cost impacts.",
+        "status": "signed",
+        "billing": "fixed fee",
+        "estimated_fee": 68000,
+        "source_document": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "contract",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Summary\nThis is a statement of work between Vanguard Logistics & Supply Co. (Client) and Apex Cloud Partners LLC (Consultant) for a CRM transformation project. The engagement is estimated to last 10 weeks, with a total fixed fee of $68,000.\n\n## Evidence\n- \"Statement of Work (SOW): Salesforce Sales & Service Cloud Implementation\"\n- \"Fee Structure: Fixed Fee of $68,000 USD (excludes Salesforce licensing fees).\"\n- \"The estimated duration of this engagement is 10 Weeks from the Project Kick-off date.\""
+    }
+  },
+  {
+    "entityKey": "SOWD-0004",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (contract), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "SOWD-0004: Automation",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "milestone": "Build & Configure"
+      },
+      "links": [
+        {
+          "type": "part_of_sow",
+          "target": "SOW-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "contract",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nUp to 8 Record-Triggered Flows covering lead conversion, opportunity stage alerts, and case escalation.\n\n## Evidence\n- \"Up to 8 Record-Triggered Flows covering lead conversion, opportunity stage alerts, and case escalation.\""
+    }
+  },
+  {
+    "entityKey": "REL-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (hierarchy), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "REL-0001: Production Go-Live",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "release_version": "v1.0",
+        "dependencies": [
+          "UAT sign-off"
+        ],
+        "stakeholders": [
+          "PERSON-0004",
+          "PERSON-0005"
+        ]
+      },
+      "links": [
+        {
+          "type": "closes",
+          "target": "EPIC-0001"
+        },
+        {
+          "type": "closes",
+          "target": "EPIC-0002"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "hierarchy",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Scope\nFull production deployment of the configured Sales and Service Cloud environment following UAT and data migration verification.\n\n## Evidence\n- \"Production deployment completed; Cutover data migration verified.\"\n- \"Milestone 4 (15% - $10,200): Due upon Production Go-Live (End of Week 9).\""
+    }
+  },
+  {
+    "entityKey": "SOWD-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (contract), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "SOWD-0001: Core Platform & Security",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "milestone": "Build & Configure"
+      },
+      "links": [
+        {
+          "type": "part_of_sow",
+          "target": "SOW-0001"
+        },
+        {
+          "type": "integrates",
+          "target": "COMP-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "contract",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nOrg setup, Role Hierarchy, Profiles, Permission Sets, Organization-Wide Defaults (OWD), and Sharing Rules for 65 total users.\n\n## Evidence\n- \"Org setup, Role Hierarchy, Profiles, Permission Sets, Organization-Wide Defaults (OWD), and Sharing Rules for 65 total users.\""
+    }
+  },
+  {
+    "entityKey": "SOWD-0006",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (contract), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "SOWD-0006: Reporting & Analytics",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "milestone": "Build & Configure"
+      },
+      "links": [
+        {
+          "type": "part_of_sow",
+          "target": "SOW-0001"
+        },
+        {
+          "type": "depends_on_deliverable",
+          "target": "SOWD-0005"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "contract",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nUp to 12 custom reports and 2 executive dashboards (Sales Pipeline & Support Operations).\n\n## Evidence\n- \"Up to 12 custom reports and 2 executive dashboards (Sales Pipeline & Support Operations).\""
+    }
+  },
+  {
+    "entityKey": "FEAT-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (hierarchy), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "FEAT-0001: Core CRM Platform Transformation",
+      "version": 1,
+      "aliases": [
+        "Project Horizon"
+      ],
+      "data": {
+        "business_value": "Replace fragmented legacy spreadsheets and an outdated ticketing system with a unified Customer Relationship Management platform.",
+        "priority": "must",
+        "success_metrics": [
+          "Centralize account, contact, and opportunity data",
+          "Automate lead routing and quote-to-close approval workflows",
+          "Deploy Service Cloud for 20-agent support team",
+          "Provide real-time pipeline visibility and SLA compliance"
+        ]
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0005"
+        },
+        {
+          "type": "realizes_opportunity",
+          "target": "OPP-0001"
+        },
+        {
+          "type": "realizes_opportunity",
+          "target": "OPP-0002"
+        },
+        {
+          "type": "realizes_opportunity",
+          "target": "OPP-0003"
+        },
+        {
+          "type": "decomposes_into",
+          "target": "INIT-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "hierarchy",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nThis project implements Salesforce Sales Cloud and Service Cloud to centralize customer data and automate operations. It aims to improve productivity and provide leadership with real-time operational visibility.\n\n## Evidence\n- \"The objective is to replace fragmented legacy spreadsheets and an outdated ticketing system with a unified Customer Relationship Management (CRM) platform.\"\n- \"Primary Business Objectives:\""
+    }
+  },
+  {
+    "entityKey": "DEC-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (decisions), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "DEC-0002: Project engagement fixed fee of 68000 USD",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "context": "Establishment of the commercial terms for the implementation project.",
+        "stakeholders": [
+          "David Thorne"
+        ],
+        "date_made": "2026-11-16"
+      },
+      "links": [
+        {
+          "type": "decided_by",
+          "target": "PERSON-0004"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "decisions",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Decision\nThe project will be delivered for a fixed fee of 68000 USD, excluding Salesforce licensing fees, with a defined payment schedule based on milestones.\n\n## Consequences / follow-up\nPayments will be triggered by SOW execution, SDD sign-off, UAT sign-off, and Production Go-Live.\n\n## Evidence\n- \"Fee Structure: Fixed Fee of $68,000 USD (excludes Salesforce licensing fees).\""
+    }
+  },
+  {
+    "entityKey": "PERSON-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (people), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "PERSON-0002: Marcus Vance",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Lead Solution Architect",
+        "organization": "Apex Cloud Partners LLC",
+        "expertise_areas": [
+          "technical architecture",
+          "data model",
+          "security",
+          "discovery lead"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nResponsible for technical architecture, data model, security, and discovery lead for the consultant team.\n\n## Evidence\n- \"Lead Solution Architect (Marcus Vance): Technical architecture, data model, security, and discovery lead.\""
+    }
+  },
+  {
+    "entityKey": "P-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (personas), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "P-0001: Sales representative",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Manage customer accounts and sales opportunities.",
+        "goals": [
+          "Track customer interactions and account data",
+          "Manage sales pipeline",
+          "Convert leads into opportunities"
+        ],
+        "behaviors": [
+          "Manage leads and opportunities",
+          "Use spreadsheets to track data"
+        ],
+        "characteristics": [
+          "45 total representatives"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "personas",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Context\nThe sales team currently relies on fragmented legacy spreadsheets to manage their daily work. They will move to the Salesforce Sales Cloud to manage leads, contacts, and opportunities with automated routing and approval workflows.\n\n## Frustrations\nFragmented data tracking and manual processes for lead management and quotes.\n\n## Evidence\n- \"Centralize account, contact, and opportunity data for 45 sales representatives.\"\n- \"Automate lead routing and quote-to-close approval workflows.\""
+    }
+  },
+  {
+    "entityKey": "PERSON-0006",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (people), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "PERSON-0006: Liam O'Connor",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Salesforce System Administrator",
+        "organization": "Vanguard Logistics & Supply Co.",
+        "expertise_areas": [
+          "technical support",
+          "data extraction",
+          "post-go-live administration"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nTechnical counterpart, data extraction owner, and post-go-live administrator.\n\n## Evidence\n- \"Salesforce System Administrator (Liam O'Connor): Technical counterpart, data extraction owner, and post-go-live admin.\""
+    }
+  },
+  {
+    "entityKey": "PERSON-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (people), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "PERSON-0001: Sarah Jenkins",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Engagement Manager",
+        "organization": "Apex Cloud Partners LLC",
+        "expertise_areas": [
+          "project governance",
+          "budget",
+          "timeline"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nResponsible for overall project governance, budget, timeline, and escalations for the consultant team.\n\n## Evidence\n- \"Engagement Manager (Sarah Jenkins): Overall project governance, budget, timeline, and escalations.\""
+    }
+  },
+  {
+    "entityKey": "C-001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (capabilities), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "C-001: Ability to consolidate customer information",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "business_value": "Replace fragmented legacy spreadsheets and an outdated ticketing system.",
+        "priority": "must",
+        "maturity_level": 0
+      },
+      "links": [
+        {
+          "type": "decomposes_into",
+          "target": "EPIC-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "capabilities",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Statement\nAbility to centralize account, contact, and opportunity data for sales representatives in a single repository.\n\n## What this unblocks\nReplaces fragmented legacy spreadsheets that currently hold sales data.\n\n## Current maturity\nThe current state relies on fragmented legacy spreadsheets.\n\n## Evidence\n- \"The objective is to replace fragmented legacy spreadsheets and an outdated ticketing system with a unified Customer Relationship Management (CRM) platform.\"\n- \"Centralize account, contact, and opportunity data for 45 sales representatives.\""
+    }
+  },
+  {
+    "entityKey": "OPP-0003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (opportunities), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "OPP-0003: Lack of visibility into sales and support operations",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "scope": "Executive reporting"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "opportunities",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Problem\nExecutive leadership currently lacks real-time visibility into the sales pipeline and support SLA compliance.\n\n## Hypothesized value\nIf this is addressed, leadership will have access to real-time pipeline visibility and SLA compliance dashboards.\n\n## Evidence\n- \"Provide executive leadership with real-time pipeline visibility and SLA compliance dashboards.\""
+    }
+  },
+  {
+    "entityKey": "SOWD-0005",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (contract), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "SOWD-0005: Data Migration",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "milestone": "Data & UAT"
+      },
+      "links": [
+        {
+          "type": "part_of_sow",
+          "target": "SOW-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "contract",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nCleansing, mapping, and loading of active Accounts, Contacts, Open Opportunities, and past 12 months of closed Cases from legacy CSV exports.\n\n## Evidence\n- \"Cleansing, mapping, and loading of active Accounts, Contacts, Open Opportunities, and past 12 months of closed Cases from legacy CSV exports.\""
+    }
+  },
+  {
+    "entityKey": "C-002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (capabilities), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "C-002: Ability to automate sales workflows",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "priority": "must"
+      },
+      "links": [
+        {
+          "type": "decomposes_into",
+          "target": "EPIC-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "capabilities",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Statement\nAbility to automate lead routing and quote-to-close approval workflows for sales operations.\n\n## What this unblocks\nRemoves manual intervention from lead routing and discount approval processes.\n\n## Evidence\n- \"Automate lead routing and quote-to-close approval workflows.\""
+    }
+  },
+  {
+    "entityKey": "DEC-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (decisions), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "DEC-0001: Implement Salesforce Sales and Service Cloud",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "context": "Vanguard Logistics & Supply Co. needed to replace fragmented legacy spreadsheets and an outdated ticketing system with a unified CRM platform.",
+        "rationale": "To centralize account, contact, and opportunity data, automate lead routing and approval workflows, and deploy service cloud capabilities.",
+        "stakeholders": [
+          "Sarah Jenkins",
+          "Marcus Vance",
+          "Priya Nair",
+          "David Thorne",
+          "Elena Rostova",
+          "Liam O'Connor"
+        ],
+        "date_made": "2026-11-16"
+      },
+      "links": [
+        {
+          "type": "decided_by",
+          "target": "PERSON-0004"
+        },
+        {
+          "type": "affects_deliverable",
+          "target": "SOWD-0002"
+        },
+        {
+          "type": "affects_deliverable",
+          "target": "SOWD-0003"
+        },
+        {
+          "type": "affects_deliverable",
+          "target": "SOWD-0004"
+        },
+        {
+          "type": "affects_deliverable",
+          "target": "SOWD-0005"
+        },
+        {
+          "type": "affects_deliverable",
+          "target": "SOWD-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "decisions",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Decision\nVanguard Logistics & Supply Co. will implement Salesforce Sales Cloud and Service Cloud through Apex Cloud Partners LLC.\n\n## Consequences / follow-up\nProject Horizon - CRM Transformation will proceed with specific deliverables including core platform setup, Sales Cloud, Service Cloud, automation, data migration, and training.\n\n## Evidence\n- \"Vanguard Logistics & Supply Co. (\"Client\") has engaged Apex Cloud Partners LLC (\"Consultant\") to implement Salesforce Sales Cloud and Service Cloud.\""
+    }
+  },
+  {
+    "entityKey": "DD-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (design), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "DD-0002: No automated external system integrations",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "problem": "The client has existing ERP and WMS systems, and the project must define whether to integrate them with the new Salesforce platform within the current constraints.",
+        "recommendation": "Bidirectional integrations with ERP or WMS systems are explicitly out of scope for this implementation.",
+        "rationale": "Complexity associated with real-time or batch integration with external inventory and financial systems exceeds the scope defined for this CRM transformation project.",
+        "implementation_impact": "Data between the ERP/WMS and Salesforce must be managed manually or via external processes outside of this implementation."
+      },
+      "links": [
+        {
+          "type": "affects_component",
+          "target": "COMP-0001"
+        },
+        {
+          "type": "affects_component",
+          "target": "COMP-0002"
+        },
+        {
+          "type": "affects_feature",
+          "target": "FEAT-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "design",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Consequences\nThe Salesforce platform will operate as a standalone CRM without automated synchronization with the warehouse or financial systems.\n\n## Status\nAccepted\n\n## Evidence\n- \"Bidirectional ERP or WMS (Warehouse Management System) API integrations.\""
+    }
+  },
+  {
+    "entityKey": "COMP-0003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (systems), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "COMP-0003: Legacy ticketing system",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "responsibility": "Manage customer support requests.",
+        "tech_layer": "service",
+        "status": "retired"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nAn outdated system that is being replaced by the new Service Cloud implementation.\n\n## Evidence\n- \"The objective is to replace fragmented legacy spreadsheets and an outdated ticketing system with a unified Customer Relationship Management (CRM) platform.\""
+    }
+  },
+  {
+    "entityKey": "PERSON-0004",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (people), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "PERSON-0004: David Thorne",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Executive Sponsor, VP of Operations",
+        "organization": "Vanguard Logistics & Supply Co.",
+        "expertise_areas": [
+          "scope",
+          "budget",
+          "Solution Design Document"
+        ],
+        "influence_level": "high"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nExecutive sponsor with final sign-off authority on scope, budget, and the SDD.\n\n## Evidence\n- \"Executive Sponsor (David Thorne, VP of Operations): Final sign-off authority on scope, budget, and SDD.\""
+    }
+  },
+  {
+    "entityKey": "EPIC-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (hierarchy), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "EPIC-0001: Sales Cloud Configuration",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "theme": "Sales",
+        "origin": "client-stated"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "hierarchy",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nConfiguration of Leads, Accounts, Contacts, Opportunities, and products with automated assignment and discount approval flows.\n\n## Evidence\n- \"Configuration of Leads, Accounts, Contacts, Opportunities, and Products/Pricebooks (1 standard pricebook). Automated lead assignment rules and 1 multi-step discount approval flow.\""
+    }
+  },
+  {
+    "entityKey": "P-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:55:27.066Z",
+    "note": "Extracted from assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md (personas), run Qor9tPpzHPXSVHnFixN1",
+    "after": {
+      "name": "P-0002: Customer support agent",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Resolve customer service cases and manage support operations.",
+        "goals": [
+          "Manage customer support cases",
+          "Adhere to service level agreements"
+        ],
+        "behaviors": [
+          "Respond to customer inquiries",
+          "Use an outdated ticketing system"
+        ],
+        "characteristics": [
+          "20 agents"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "personas",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Context\nThe support team currently uses an outdated ticketing system and will transition to Service Cloud. They handle customer cases via email and web forms, with a new focus on meeting two specific SLA tiers.\n\n## Frustrations\nInefficient legacy ticketing system and lack of automated case management.\n\n## Evidence\n- \"Deploy Service Cloud (Email-to-Case and Web-to-Case) for a 20-agent customer support team.\""
+    }
+  },
+  {
+    "entityKey": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+    "action": "source",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:56:32.302Z",
+    "note": "Added \"Transcript 1  Project Kick Off Call (Raw Export   30 Minutes)\" (10.8 KB). Consent: verbally",
+    "before": null,
+    "after": {
+      "path": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+      "kind": "transcript",
+      "size": 11015,
+      "consent_status": "all_party_confirmed"
+    }
+  },
+  {
+    "entityKey": "ASSUM-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (questions), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "ASSUM-0002: Phase one strictly excludes ERP and WMS integrations",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "risk_if_invalid": "The project might exceed the ten-week timeline or scope if these integrations are introduced during phase one."
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "questions",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Claim\nERP and WMS integrations are out of scope for phase one.\n\n## Basis\nSarah Jenkins stated this as a guardrail from the SOW and confirmed alignment with David Thorne and Elena Rostova.\n\n## Evidence\n- \"we are strictly keeping ERP and WMS integrations out of scope for phase one\""
+    }
+  },
+  {
+    "entityKey": "EPIC-0003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (hierarchy), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "EPIC-0003: Data Migration",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "theme": "Data",
+        "origin": "synthesized"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "hierarchy",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nMigration of active accounts, contacts, open opportunities, and twelve months of closed cases from the legacy Zendesk and spreadsheet systems into Salesforce.\n\n## Evidence\n- \"Per the SOW we are migrating active Accounts, Contacts, Open Opportunities, and the last twelve months of closed Cases from Zendesk.\""
+    }
+  },
+  {
+    "entityKey": "AI-0003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (actions), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "AI-0003: Send data mapping templates and matching checklist",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "due_date": "2026-11-17",
+        "status": "open"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0003"
+        },
+        {
+          "type": "serves_deliverable",
+          "target": "SOWD-0005"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "actions",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Action\nPriya Nair will send the CSV mapping templates and an Excel matching checklist with formulas to Liam O'Connor to assist with data migration.\n\n## Evidence\n- \"I am going to send you our CSV mapping templates tomorrow morning.\"\n- \"However, I will send you a quick Excel matching checklist and some formulas you can run to flag duplicates fast\"\n- \"Priya is sending over the data templates and pre discovery notes tomorrow morning.\""
+    }
+  },
+  {
+    "entityKey": "P-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (personas), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "P-0001: Sales representative",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Manage customer accounts and sales opportunities.",
+        "goals": [
+          "Track customer interactions and account data",
+          "Manage sales pipeline",
+          "Convert leads into opportunities"
+        ],
+        "behaviors": [
+          "Manage leads and opportunities",
+          "Use spreadsheets to track data"
+        ],
+        "characteristics": [
+          "45 total representatives"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "personas",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Context\nThe sales team currently relies on fragmented legacy spreadsheets to manage their daily work. They will move to the Salesforce Sales Cloud to manage leads, contacts, and opportunities with automated routing and approval workflows.\n\n## Frustrations\nFragmented data tracking and manual processes for lead management and quotes.\n\n## Evidence\n- \"Centralize account, contact, and opportunity data for 45 sales representatives.\"\n- \"Automate lead routing and quote-to-close approval workflows.\""
+    },
+    "after": {
+      "name": "P-0001: Sales representative",
+      "version": 2,
+      "aliases": [],
+      "data": {
+        "role": "Manage customer accounts and sales opportunities.",
+        "goals": [
+          "Track customer interactions and account data",
+          "Manage sales pipeline",
+          "Convert leads into opportunities",
+          "track quotes",
+          "hand off new accounts to support without emailing spreadsheets"
+        ],
+        "behaviors": [
+          "Manage leads and opportunities",
+          "Use spreadsheets to track data",
+          "manage freight pipelines in spreadsheets",
+          "email spreadsheets around to hand off accounts",
+          "use rate spreadsheets",
+          "track follow-ups in trackers"
+        ],
+        "characteristics": [
+          "45 total representatives",
+          "45 total users",
+          "some are senior enterprise account executives",
+          "some are inbound sales coordinators"
+        ],
+        "quote": "our reps just need one place to track quotes and hand off new accounts to support without emailing spreadsheets around."
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "personas",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "personas",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Context\nThe sales team currently relies on fragmented legacy spreadsheets to manage their daily work. They will move to the Salesforce Sales Cloud to manage leads, contacts, and opportunities with automated routing and approval workflows.\n\n## Frustrations\nFragmented data tracking and manual processes for lead management and quotes.\n\n## Evidence\n- \"Centralize account, contact, and opportunity data for 45 sales representatives.\"\n- \"Automate lead routing and quote-to-close approval workflows.\"\n- \"our reps just need one place to track quotes and hand off new accounts to support without emailing spreadsheets around.\"\n- \"If they can share their screen and show us an actual rate spreadsheet, a messy quote email, or how they currently track follow ups\""
+    }
+  },
+  {
+    "entityKey": "AI-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (actions), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "AI-0001: Send SDD walkthrough and sign-off invites",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "due_date": "2026-11-16",
+        "status": "open"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "actions",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Action\nSarah Jenkins will send the updated invites for the SDD walkthrough (Tuesday the 24th) and the sign-off meeting (Wednesday the 25th) to David Thorne's calendar.\n\n## Evidence\n- \"Done, I will send that invite right after this call.\"\n- \"I am sending out the updated Tuesday Wednesday SDD review invites for next week\""
+    }
+  },
+  {
+    "entityKey": "PERSON-0005",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (people), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "PERSON-0005: Elena Rostova",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Product Owner / Project Lead, Director of Revenue Operations",
+        "organization": "Vanguard Logistics & Supply Co.",
+        "expertise_areas": [
+          "day-to-day decision making",
+          "UAT coordination",
+          "SME facilitation"
+        ],
+        "influence_level": "medium"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nDay-to-day decision-maker, UAT coordinator, and SME facilitator for the client team.\n\n## Evidence\n- \"Product Owner / Project Lead (Elena Rostova, Director of Revenue Operations): Day-to-day decision-maker, UAT coordinator, and SME facilitator.\""
+    },
+    "after": {
+      "name": "PERSON-0005: Elena Rostova",
+      "version": 2,
+      "aliases": [],
+      "data": {
+        "role": "Product Owner / Project Lead, Director of Revenue Operations",
+        "organization": "Vanguard Logistics & Supply Co.",
+        "expertise_areas": [
+          "day-to-day decision making",
+          "UAT coordination",
+          "SME facilitation"
+        ],
+        "influence_level": "medium"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nDay-to-day decision-maker, UAT coordinator, and SME facilitator for the client team.\n\n## Evidence\n- \"Product Owner / Project Lead (Elena Rostova, Director of Revenue Operations): Day-to-day decision-maker, UAT coordinator, and SME facilitator.\"\n- \"Elena Rostova, Director of Revenue Operations. I am acting as the day to day product owner for Vanguard. I will be coordinating our sales and support leads for discovery sessions and helping make quick decisions\"\n\n## Motivations & concerns\nWants to ensure the project moves quickly and does not stall."
+    }
+  },
+  {
+    "entityKey": "PP-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (pain_points), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "PP-0001: Sales and support data is fragmented across spreadsheets and legacy systems",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "severity": "medium",
+        "frequency": "every day"
+      },
+      "links": [
+        {
+          "type": "affects_persona",
+          "target": "P-0001"
+        },
+        {
+          "type": "affects_persona",
+          "target": "P-0002"
+        },
+        {
+          "type": "relates_to_opportunity",
+          "target": "OPP-0001"
+        },
+        {
+          "type": "relates_to_opportunity",
+          "target": "OPP-0003"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "pain_points",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nThe sales and support teams rely on fragmented legacy spreadsheets and an outdated Zendesk setup to manage their daily work. This makes it difficult to maintain visibility into the freight pipeline and leads to operational inefficiencies.\n\n## Current workaround\nThe teams are living out of spreadsheets and emailing them around to track quotes and hand off new accounts.\n\n## Evidence\n- \"We have been living out of spreadsheets and an old Zendesk setup for way too long, so my main priority here is getting clean visibility into our freight pipeline\"\n- \"our reps just need one place to track quotes and hand off new accounts to support without emailing spreadsheets around.\""
+    }
+  },
+  {
+    "entityKey": "COMP-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (systems), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "COMP-0002: Salesforce Service Cloud",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "responsibility": "Manage customer support cases and service level agreements.",
+        "tech_layer": "service",
+        "status": "building",
+        "product": "Salesforce Service Cloud"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0006"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nA new service platform providing Email-to-Case and Web-to-Case capabilities for the support team.\n\n## Evidence\n- \"Deploy Service Cloud (Email-to-Case and Web-to-Case) for a 20-agent customer support team.\"\n- \"Configuration of Cases, Entitlements/Milestones (2 SLA tiers), Email-to-Case (up to 3 support addresses), and 1 Web-to-Case form.\""
+    },
+    "after": {
+      "name": "COMP-0002: Salesforce Service Cloud",
+      "version": 2,
+      "aliases": [],
+      "data": {
+        "responsibility": "Manage customer support cases and service level agreements.",
+        "tech_layer": "service",
+        "status": "building",
+        "product": "Salesforce Service Cloud",
+        "interfaces": [
+          "Zendesk"
+        ]
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0006"
+        },
+        {
+          "type": "depends_on_component",
+          "target": "COMP-0003"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nA new service platform providing Email-to-Case and Web-to-Case capabilities for the support team.\n\n## Evidence\n- \"Deploy Service Cloud (Email-to-Case and Web-to-Case) for a 20-agent customer support team.\"\n- \"Configuration of Cases, Entitlements/Milestones (2 SLA tiers), Email-to-Case (up to 3 support addresses), and 1 Web-to-Case form.\"\n- \"we are replacing your legacy spreadsheets and Zendesk instance with Salesforce Sales Cloud and Service Cloud\"\n- \"we are migrating active Accounts, Contacts, Open Opportunities, and the last twelve months of closed Cases from Zendesk.\""
+    }
+  },
+  {
+    "entityKey": "AI-0004",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (actions), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "AI-0004: Set up shared Slack channel",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "due_date": "2026-11-16",
+        "status": "open"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "actions",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Action\nSarah Jenkins will set up a shared Slack channel between Apex and Vanguard to facilitate communication between Liam and Elena.\n\n## Evidence\n- \"First, we will spin up a shared Slack channel between Apex and Vanguard today\"\n- \"setting up our shared Slack channel today.\""
+    }
+  },
+  {
+    "entityKey": "ASSUM-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (questions), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "ASSUM-0001: Source data cleansing is Vanguard's responsibility",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "risk_if_invalid": "Apex Cloud Partners might experience delays in project timeline if they have to perform data cleansing instead of focusing on configuration."
+      },
+      "links": [
+        {
+          "type": "relates_to_opportunity",
+          "target": "OPP-0004"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "questions",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Claim\nVanguard is responsible for performing source data cleansing and deduplication prior to loading data into Salesforce.\n\n## Basis\nPriya Nair stated it is under the SOW.\n\n## Evidence\n- \"Under the SOW, source data cleansing and deduplication sits on Vanguard's plate prior to us loading the files\""
+    }
+  },
+  {
+    "entityKey": "PERSON-0008",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (people), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "PERSON-0008: Maya",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Inbound Sales Coordinator",
+        "organization": "Vanguard Logistics",
+        "expertise_areas": [
+          "web leads"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nInbound Sales Coordinator scheduled to join discovery to demonstrate lead intake processes.\n\n## Evidence\n- \"I also asked our inbound sales coordinator, Maya, to join for the first twenty minutes so she can show you how web leads currently come into the shared inbox.\""
+    }
+  },
+  {
+    "entityKey": "COMP-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (systems), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "COMP-0001: Salesforce Sales Cloud",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "responsibility": "Manage sales accounts, contacts, opportunities, and lead routing.",
+        "tech_layer": "service",
+        "status": "building",
+        "product": "Salesforce Sales Cloud"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0006"
+        },
+        {
+          "type": "supports_feature",
+          "target": "FEAT-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nA new CRM platform being implemented to centralize sales data and automate quote-to-close approval workflows.\n\n## Evidence\n- \"Vanguard Logistics & Supply Co. (\"Client\") has engaged Apex Cloud Partners LLC (\"Consultant\") to implement Salesforce Sales Cloud and Service Cloud.\"\n- \"Configuration of Leads, Accounts, Contacts, Opportunities, and Products/Pricebooks (1 standard pricebook). Automated lead assignment rules and 1 multi-step discount approval flow.\""
+    },
+    "after": {
+      "name": "COMP-0001: Salesforce Sales Cloud",
+      "version": 2,
+      "aliases": [],
+      "data": {
+        "responsibility": "Manage sales accounts, contacts, opportunities, and lead routing.",
+        "tech_layer": "service",
+        "status": "building",
+        "product": "Salesforce Sales Cloud"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0006"
+        },
+        {
+          "type": "supports_feature",
+          "target": "FEAT-0001"
+        },
+        {
+          "type": "depends_on_component",
+          "target": "COMP-0005"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nA new CRM platform being implemented to centralize sales data and automate quote-to-close approval workflows.\n\n## Evidence\n- \"Vanguard Logistics & Supply Co. (\"Client\") has engaged Apex Cloud Partners LLC (\"Consultant\") to implement Salesforce Sales Cloud and Service Cloud.\"\n- \"Configuration of Leads, Accounts, Contacts, Opportunities, and Products/Pricebooks (1 standard pricebook). Automated lead assignment rules and 1 multi-step discount approval flow.\"\n- \"we are replacing your legacy spreadsheets and Zendesk instance with Salesforce Sales Cloud and Service Cloud\"\n- \"our reps just need one place to track quotes and hand off new accounts to support\""
+    }
+  },
+  {
+    "entityKey": "COMP-0006",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (systems), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "COMP-0006: WMS",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "responsibility": "Warehouse management system.",
+        "tech_layer": "service",
+        "status": "live"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0004"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nWarehouse Management System. It is explicitly out of scope for integration in phase one of the Salesforce implementation.\n\n## Evidence\n- \"we are strictly keeping ERP and WMS integrations out of scope for phase one\""
+    }
+  },
+  {
+    "entityKey": "C-005",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (capabilities), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "C-005: Ability to track sales quotes and hand off accounts",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "business_value": "replaces fragmented spreadsheets and manual handoff processes",
+        "priority": "must",
+        "maturity_level": 1
+      },
+      "links": [
+        {
+          "type": "decomposes_into",
+          "target": "EPIC-0001"
+        },
+        {
+          "type": "decomposes_into",
+          "target": "EPIC-0002"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "capabilities",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Statement\nAbility to track customer quotes and formally hand off accounts between sales and support teams in a centralized system\n\n## What this unblocks\nremoves the current reliance on spreadsheets and emails to track quotes and account handoffs between sales and support\n\n## Current maturity\nThe organization is currently relying on spreadsheets and email to manage these processes.\n\n## Evidence\n- \"but right now our reps just need one place to track quotes and hand off new accounts to support without emailing spreadsheets around.\""
+    }
+  },
+  {
+    "entityKey": "P-0003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (personas), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "P-0003: System administrator",
+      "version": 1,
+      "aliases": [
+        "Salesforce System Administrator"
+      ],
+      "data": {
+        "role": "Maintain the technical platform and manage ongoing system administration.",
+        "goals": [
+          "Manage CRM platform configuration",
+          "Handle data extraction and maintenance",
+          "Provide post-go-live support"
+        ],
+        "behaviors": [
+          "Extract data for migration",
+          "Act as a technical counterpart to the consultant team"
+        ],
+        "characteristics": [
+          "Internal technical owner"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "personas",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Context\nThis user acts as the technical lead within the client organization. They work closely with the consultants during implementation and assume full responsibility for the system after the project concludes.\n\n## Frustrations\nManaging complex legacy data and transitioning from fragmented systems.\n\n## Evidence\n- \"Salesforce System Administrator (Liam O'Connor): Technical counterpart, data extraction owner, and post-go-live admin.\""
+    },
+    "after": {
+      "name": "P-0003: System administrator",
+      "version": 2,
+      "aliases": [
+        "Salesforce System Administrator",
+        "Salesforce Admin"
+      ],
+      "data": {
+        "role": "Maintain the technical platform and manage ongoing system administration.",
+        "goals": [
+          "Manage CRM platform configuration",
+          "Handle data extraction and maintenance",
+          "Provide post-go-live support",
+          "own the org once we go live",
+          "manage database exports",
+          "provision environments"
+        ],
+        "behaviors": [
+          "Extract data for migration",
+          "Act as a technical counterpart to the consultant team",
+          "handles internal IT systems and database exports",
+          "provisions sandboxes",
+          "shadows consultants during the build"
+        ],
+        "characteristics": [
+          "Internal technical owner",
+          "passed Salesforce Admin certification",
+          "in-house technical resource"
+        ],
+        "quote": "I handle internal IT systems and database exports right now, and I actually just passed my Salesforce Admin cert last month."
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "personas",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "personas",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Context\nThis user acts as the technical lead within the client organization. They work closely with the consultants during implementation and assume full responsibility for the system after the project concludes.\n\n## Frustrations\nManaging complex legacy data and transitioning from fragmented systems.\n\n## Evidence\n- \"Salesforce System Administrator (Liam O'Connor): Technical counterpart, data extraction owner, and post-go-live admin.\"\n- \"I handle internal IT systems and database exports right now, and I actually just passed my Salesforce Admin cert last month.\"\n- \"One thing I should warn you about now is our legacy customer database is pretty messy. We have got duplicate accounts everywhere\""
+    }
+  },
+  {
+    "entityKey": "PERSON-0007",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (people), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "PERSON-0007: Carlos Mendez",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Senior Enterprise Account Executive",
+        "organization": "Vanguard Logistics"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nParticipant in the upcoming sales discovery session.\n\n## Evidence\n- \"It will be Liam and me, plus Carlos Mendez who is one of our senior enterprise account executives.\""
+    }
+  },
+  {
+    "entityKey": "PP-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (pain_points), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "PP-0002: Legacy customer database contains widespread duplicates",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "severity": "medium",
+        "frequency": "frequently"
+      },
+      "links": [
+        {
+          "type": "affects_persona",
+          "target": "P-0003"
+        },
+        {
+          "type": "relates_to_opportunity",
+          "target": "OPP-0004"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "pain_points",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nThe legacy customer database is messy, containing duplicate accounts and inconsistent addresses for the same parent company. This complicates data migration and requires manual intervention to identify the correct billing entity.\n\n## Current workaround\nThe team will be provided with an Excel matching checklist and formulas to flag duplicates to avoid manual review of ten thousand rows.\n\n## Evidence\n- \"One thing I should warn you about now is our legacy customer database is pretty messy. We have got duplicate accounts everywhere\""
+    }
+  },
+  {
+    "entityKey": "COMP-0005",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (systems), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "COMP-0005: NetSuite",
+      "version": 1,
+      "aliases": [
+        "ERP"
+      ],
+      "data": {
+        "responsibility": "Client ERP system.",
+        "tech_layer": "service",
+        "status": "live",
+        "interfaces": [
+          "Salesforce Sales Cloud"
+        ],
+        "product": "NetSuite"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0004"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nThe client's ERP system. There is a planned integration with Salesforce scheduled for phase two, likely Q3 next year.\n\n## Evidence\n- \"we are strictly keeping ERP and WMS integrations out of scope for phase one\"\n- \"We know we eventually want NetSuite talking to Salesforce in phase two, probably Q3 next year\""
+    }
+  },
+  {
+    "entityKey": "OPP-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (opportunities), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "OPP-0001: Fragmented legacy systems hinder sales productivity",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "scope": "Sales"
+      },
+      "links": [
+        {
+          "type": "target_persona",
+          "target": "P-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "opportunities",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Problem\nSales representatives currently struggle with fragmented legacy spreadsheets, which makes managing daily work difficult.\n\n## Hypothesized value\nIf this is addressed, the team will benefit from a unified platform that centralizes account, contact, and opportunity data.\n\n## Evidence\n- \"The objective is to replace fragmented legacy spreadsheets and an outdated ticketing system with a unified Customer Relationship Management (CRM) platform.\""
+    },
+    "after": {
+      "name": "OPP-0001: Fragmented legacy systems hinder sales productivity",
+      "version": 2,
+      "aliases": [
+        "Consolidate sales quote tracking and handoffs"
+      ],
+      "data": {
+        "scope": "Sales",
+        "timeline": "Phase one"
+      },
+      "links": [
+        {
+          "type": "target_persona",
+          "target": "P-0001"
+        },
+        {
+          "type": "addresses_pain_point",
+          "target": "PP-0001"
+        },
+        {
+          "type": "target_persona",
+          "target": "P-0002"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "opportunities",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "opportunities",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Problem\nSales representatives currently struggle with fragmented legacy spreadsheets, which makes managing daily work difficult.\n\n## Hypothesized value\nIf this is addressed, the team will benefit from a unified platform that centralizes account, contact, and opportunity data.\n\n## Evidence\n- \"The objective is to replace fragmented legacy spreadsheets and an outdated ticketing system with a unified Customer Relationship Management (CRM) platform.\"\n- \"our reps just need one place to track quotes and hand off new accounts to support without emailing spreadsheets around.\"\n- \"We have been living out of spreadsheets and an old Zendesk setup for way too long, so my main priority here is getting clean visibility into our freight pipeline\""
+    }
+  },
+  {
+    "entityKey": "P-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (personas), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "P-0002: Customer support agent",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Resolve customer service cases and manage support operations.",
+        "goals": [
+          "Manage customer support cases",
+          "Adhere to service level agreements"
+        ],
+        "behaviors": [
+          "Respond to customer inquiries",
+          "Use an outdated ticketing system"
+        ],
+        "characteristics": [
+          "20 agents"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "personas",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Context\nThe support team currently uses an outdated ticketing system and will transition to Service Cloud. They handle customer cases via email and web forms, with a new focus on meeting two specific SLA tiers.\n\n## Frustrations\nInefficient legacy ticketing system and lack of automated case management.\n\n## Evidence\n- \"Deploy Service Cloud (Email-to-Case and Web-to-Case) for a 20-agent customer support team.\""
+    },
+    "after": {
+      "name": "P-0002: Customer support agent",
+      "version": 2,
+      "aliases": [],
+      "data": {
+        "role": "Resolve customer service cases and manage support operations.",
+        "goals": [
+          "Manage customer support cases",
+          "Adhere to service level agreements",
+          "manage support cases",
+          "receive account handoffs from sales"
+        ],
+        "behaviors": [
+          "Respond to customer inquiries",
+          "Use an outdated ticketing system",
+          "use an old Zendesk instance",
+          "receive account handoffs via email"
+        ],
+        "characteristics": [
+          "20 agents",
+          "20 total users"
+        ],
+        "quote": "We have been living out of spreadsheets and an old Zendesk setup for way too long"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "personas",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "personas",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Context\nThe support team currently uses an outdated ticketing system and will transition to Service Cloud. They handle customer cases via email and web forms, with a new focus on meeting two specific SLA tiers.\n\n## Frustrations\nInefficient legacy ticketing system and lack of automated case management.\n\n## Evidence\n- \"Deploy Service Cloud (Email-to-Case and Web-to-Case) for a 20-agent customer support team.\"\n- \"We have been living out of spreadsheets and an old Zendesk setup for way too long\""
+    }
+  },
+  {
+    "entityKey": "AI-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (actions), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "AI-0002: Provision Partial Copy sandbox and create admin logins",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "due_date": "2026-11-16",
+        "status": "open"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0006"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "actions",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Action\nLiam O'Connor will create the Partial Copy sandbox and create System Administrator user accounts for Marcus Vance and Priya Nair in both the Production and Sandbox environments.\n\n## Evidence\n- \"Also please create System Administrator user accounts for Priya and me in both Production and the Sandbox.\"\n- \"Will do. I will get those logins sent over to both of you right after lunch.\"\n- \"Liam is creating admin logins for Marcus and Priya and kicking off the Partial Copy sandbox today.\""
+    }
+  },
+  {
+    "entityKey": "PERSON-0003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (people), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "PERSON-0003: Priya Nair",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Senior Salesforce Consultant",
+        "organization": "Apex Cloud Partners LLC",
+        "expertise_areas": [
+          "configuration",
+          "Flows",
+          "data migration",
+          "training"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nHandles hands-on configuration, Flows, data migration, and training for the consultant team.\n\n## Evidence\n- \"Senior Salesforce Consultant (Priya Nair): Hands-on configuration, Flows, data migration, and training.\""
+    },
+    "after": {
+      "name": "PERSON-0003: Priya Nair",
+      "version": 2,
+      "aliases": [],
+      "data": {
+        "role": "Senior Salesforce Consultant",
+        "organization": "Apex Cloud Partners LLC",
+        "expertise_areas": [
+          "configuration",
+          "Flows",
+          "data migration",
+          "training"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nHandles hands-on configuration, Flows, data migration, and training for the consultant team.\n\n## Evidence\n- \"Senior Salesforce Consultant (Priya Nair): Hands-on configuration, Flows, data migration, and training.\"\n- \"I am Priya Nair, Senior Salesforce Consultant on the Apex side. I will be doing the hands on configuration in your sandbox, building the flows, working closely with Liam on data migration\"\n\n## Motivations & concerns\nWants to address data migration early to avoid complications."
+    }
+  },
+  {
+    "entityKey": "DEC-0004",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (decisions), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "DEC-0004: Weekly status meeting cadence",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "context": "Establishment of ongoing project governance and communication cadence.",
+        "rationale": "To keep meetings focused on solving blockers rather than reading status updates.",
+        "stakeholders": [
+          "David Thorne"
+        ],
+        "date_made": "2026-11-16"
+      },
+      "links": [
+        {
+          "type": "decided_by",
+          "target": "PERSON-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "decisions",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Decision\nThe team will hold a thirty-minute weekly status call every Wednesday at 10:00 AM Eastern, supported by a one-page status report with a RAID log emailed every Tuesday afternoon.\n\n## Consequences / follow-up\nWednesday morning calls will be reserved for addressing project blockers.\n\n## Evidence\n- \"we will hold a thirty minute weekly status call every Wednesday at ten AM Eastern. Every Tuesday afternoon I will email out a one page status report\""
+    }
+  },
+  {
+    "entityKey": "REL-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (hierarchy), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "REL-0002: Phase One",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "release_version": "Phase one",
+        "stakeholders": [
+          "David Thorne",
+          "Elena Rostova",
+          "Liam O'Connor"
+        ]
+      },
+      "links": [
+        {
+          "type": "closes",
+          "target": "EPIC-0001"
+        },
+        {
+          "type": "closes",
+          "target": "EPIC-0002"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "hierarchy",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Scope\nDeployment of Sales Cloud and Service Cloud for sixty-five users using declarative configuration and standard objects. It excludes ERP and WMS integrations, CPQ, and custom Apex code.\n\n## Evidence\n- \"we are replacing your legacy spreadsheets and Zendesk instance with Salesforce Sales Cloud and Service Cloud for sixty five total users. Forty five on the sales side and twenty on support.\""
+    }
+  },
+  {
+    "entityKey": "COMP-0004",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (systems), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "COMP-0004: Legacy spreadsheets",
+      "version": 1,
+      "aliases": [
+        "spreadsheets"
+      ],
+      "data": {
+        "responsibility": "System of record for sales tracking and quote management prior to Salesforce.",
+        "tech_layer": "data",
+        "status": "retired"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0004"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nOutdated tools used for tracking quotes and internal coordination. They are being replaced by Salesforce Sales Cloud.\n\n## Evidence\n- \"We have been living out of spreadsheets and an old Zendesk setup for way too long\"\n- \"we are replacing your legacy spreadsheets and Zendesk instance with Salesforce Sales Cloud and Service Cloud\""
+    }
+  },
+  {
+    "entityKey": "PERSON-0002",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (people), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "PERSON-0002: Marcus Vance",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Lead Solution Architect",
+        "organization": "Apex Cloud Partners LLC",
+        "expertise_areas": [
+          "technical architecture",
+          "data model",
+          "security",
+          "discovery lead"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nResponsible for technical architecture, data model, security, and discovery lead for the consultant team.\n\n## Evidence\n- \"Lead Solution Architect (Marcus Vance): Technical architecture, data model, security, and discovery lead.\""
+    },
+    "after": {
+      "name": "PERSON-0002: Marcus Vance",
+      "version": 2,
+      "aliases": [],
+      "data": {
+        "role": "Lead Solution Architect",
+        "organization": "Apex Cloud Partners LLC",
+        "expertise_areas": [
+          "technical architecture",
+          "data model",
+          "security",
+          "discovery lead",
+          "discovery workshops",
+          "data modeling",
+          "security setup"
+        ],
+        "influence_level": "medium"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nResponsible for technical architecture, data model, security, and discovery lead for the consultant team.\n\n## Evidence\n- \"Lead Solution Architect (Marcus Vance): Technical architecture, data model, security, and discovery lead.\"\n- \"Marcus Vance, Lead Solution Architect. I am going to be leading the discovery workshops starting tomorrow, designing the overall data model and security setup\"\n\n## Motivations & concerns\nPrioritizes staying within scope to ensure an on-time launch."
+    }
+  },
+  {
+    "entityKey": "PERSON-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (people), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "PERSON-0001: Sarah Jenkins",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Engagement Manager",
+        "organization": "Apex Cloud Partners LLC",
+        "expertise_areas": [
+          "project governance",
+          "budget",
+          "timeline"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nResponsible for overall project governance, budget, timeline, and escalations for the consultant team.\n\n## Evidence\n- \"Engagement Manager (Sarah Jenkins): Overall project governance, budget, timeline, and escalations.\""
+    },
+    "after": {
+      "name": "PERSON-0001: Sarah Jenkins",
+      "version": 2,
+      "aliases": [],
+      "data": {
+        "role": "Engagement Manager",
+        "organization": "Apex Cloud Partners LLC",
+        "expertise_areas": [
+          "project governance",
+          "budget",
+          "timeline",
+          "budget management",
+          "schedule management"
+        ],
+        "influence_level": "high"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nResponsible for overall project governance, budget, timeline, and escalations for the consultant team.\n\n## Evidence\n- \"Engagement Manager (Sarah Jenkins): Overall project governance, budget, timeline, and escalations.\"\n- \"I am Sarah Jenkins, Engagement Manager here at Apex Cloud Partners. My job is keeping us on schedule, managing the budget, removing blockers, and making sure the SOW stays on track.\"\n\n## Motivations & concerns\nFocuses on keeping the project on schedule, managing budget, and adhering to the SOW."
+    }
+  },
+  {
+    "entityKey": "COMP-0007",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (systems), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "COMP-0007: Salesforce Partial Copy Sandbox",
+      "version": 1,
+      "aliases": [
+        "sandbox"
+      ],
+      "data": {
+        "responsibility": "Development and testing environment for the new Salesforce implementation.",
+        "tech_layer": "infra",
+        "status": "building",
+        "product": "Salesforce Enterprise Edition"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0006"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nA partial copy environment for configuration and testing. Liam is responsible for provisioning it.\n\n## Evidence\n- \"I haven't created the Partial Copy sandbox yet\"\n- \"You can spin up the Partial Copy sandbox right now, it doesn't depend on user licenses yet.\""
+    }
+  },
+  {
+    "entityKey": "DD-0003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (design), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "DD-0003: Data cleansing and deduplication responsibility",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "problem": "Legacy customer data is messy and contains duplicates, requiring a decision on whether the implementation partner or the client performs the cleaning before migration.",
+        "recommendation": "Vanguard Logistics is responsible for performing source data cleansing and deduplication prior to loading the files into Salesforce.",
+        "rationale": "Only the client team knows which versions of customer records are the actual billing entities.",
+        "alternatives": [
+          "Implementation partner handles deduplication during the data load"
+        ],
+        "implementation_impact": "The client must clean their data and use provided Excel matching checklists and formulas to identify duplicates before the migration can proceed."
+      },
+      "links": [
+        {
+          "type": "affects_component",
+          "target": "COMP-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "design",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Consequences\nThis ensures the integrity of the data in the new system but adds preparation work to the client's team.\n\n## Status\nAccepted\n\n## Evidence\n- \"Under the SOW, source data cleansing and deduplication sits on Vanguard's plate prior to us loading the files, mostly because only your team knows which version of Acme Logistics is the real billing entity.\""
+    }
+  },
+  {
+    "entityKey": "COMP-0003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (systems), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "COMP-0003: Legacy ticketing system",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "responsibility": "Manage customer support requests.",
+        "tech_layer": "service",
+        "status": "retired"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nAn outdated system that is being replaced by the new Service Cloud implementation.\n\n## Evidence\n- \"The objective is to replace fragmented legacy spreadsheets and an outdated ticketing system with a unified Customer Relationship Management (CRM) platform.\""
+    },
+    "after": {
+      "name": "COMP-0003: Legacy ticketing system",
+      "version": 2,
+      "aliases": [
+        "Zendesk",
+        "old Zendesk setup"
+      ],
+      "data": {
+        "responsibility": "Manage customer support requests.",
+        "tech_layer": "service",
+        "status": "retired",
+        "interfaces": [
+          "Salesforce Service Cloud"
+        ],
+        "product": "Zendesk"
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0006"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "systems",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nAn outdated system that is being replaced by the new Service Cloud implementation.\n\n## Evidence\n- \"The objective is to replace fragmented legacy spreadsheets and an outdated ticketing system with a unified Customer Relationship Management (CRM) platform.\"\n- \"We have been living out of spreadsheets and an old Zendesk setup for way too long\"\n- \"we are migrating active Accounts, Contacts, Open Opportunities, and the last twelve months of closed Cases from Zendesk.\""
+    }
+  },
+  {
+    "entityKey": "OPP-0004",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (opportunities), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "OPP-0004: Clean customer database for migration",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "scope": "Data migration process",
+        "timeline": "Pre-migration"
+      },
+      "links": [
+        {
+          "type": "addresses_pain_point",
+          "target": "PP-0002"
+        },
+        {
+          "type": "target_persona",
+          "target": "P-0003"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "opportunities",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Problem\nThe current customer database contains significant duplicates and inconsistent naming, complicating data integrity and migration efforts.\n\n## Hypothesized value\nIf this is addressed, the client will successfully migrate clean customer data to the new system, measured by the completion of deduplication before the data load.\n\n## Evidence\n- \"One thing I should warn you about now is our legacy customer database is pretty messy. We have got duplicate accounts everywhere\"\n- \"source data cleansing and deduplication sits on Vanguard's plate prior to us loading the files\""
+    }
+  },
+  {
+    "entityKey": "PERSON-0004",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (people), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "PERSON-0004: David Thorne",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Executive Sponsor, VP of Operations",
+        "organization": "Vanguard Logistics & Supply Co.",
+        "expertise_areas": [
+          "scope",
+          "budget",
+          "Solution Design Document"
+        ],
+        "influence_level": "high"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nExecutive sponsor with final sign-off authority on scope, budget, and the SDD.\n\n## Evidence\n- \"Executive Sponsor (David Thorne, VP of Operations): Final sign-off authority on scope, budget, and SDD.\""
+    },
+    "after": {
+      "name": "PERSON-0004: David Thorne",
+      "version": 2,
+      "aliases": [],
+      "data": {
+        "role": "Executive Sponsor, VP of Operations",
+        "organization": "Vanguard Logistics & Supply Co.",
+        "expertise_areas": [
+          "scope",
+          "budget",
+          "Solution Design Document"
+        ],
+        "influence_level": "high",
+        "disposition": "champion"
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nExecutive sponsor with final sign-off authority on scope, budget, and the SDD.\n\n## Evidence\n- \"Executive Sponsor (David Thorne, VP of Operations): Final sign-off authority on scope, budget, and SDD.\"\n- \"David Thorne here, VP of Operations at Vanguard Logistics. Really excited to finally get this moving. We have been living out of spreadsheets and an old Zendesk setup for way too long\"\n\n## Motivations & concerns\nNeeds clean visibility into the freight pipeline and wants to eliminate reliance on spreadsheets."
+    }
+  },
+  {
+    "entityKey": "PERSON-0006",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (people), run vHEW9pWgQXEzWuel7WH6: merged into an unreviewed candidate",
+    "before": {
+      "name": "PERSON-0006: Liam O'Connor",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "role": "Salesforce System Administrator",
+        "organization": "Vanguard Logistics & Supply Co.",
+        "expertise_areas": [
+          "technical support",
+          "data extraction",
+          "post-go-live administration"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nTechnical counterpart, data extraction owner, and post-go-live administrator.\n\n## Evidence\n- \"Salesforce System Administrator (Liam O'Connor): Technical counterpart, data extraction owner, and post-go-live admin.\""
+    },
+    "after": {
+      "name": "PERSON-0006: Liam O'Connor",
+      "version": 2,
+      "aliases": [],
+      "data": {
+        "role": "Salesforce System Administrator",
+        "organization": "Vanguard Logistics & Supply Co.",
+        "expertise_areas": [
+          "technical support",
+          "data extraction",
+          "post-go-live administration",
+          "internal IT systems",
+          "database exports"
+        ]
+      },
+      "links": [],
+      "sources": [
+        {
+          "asset": "assets/sow/2026-11-16_statement-of-work-sow-salesforce-sales-service-clo.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        },
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "people",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Role & context\nTechnical counterpart, data extraction owner, and post-go-live administrator.\n\n## Evidence\n- \"Salesforce System Administrator (Liam O'Connor): Technical counterpart, data extraction owner, and post-go-live admin.\"\n- \"Liam O'Connor. I handle internal IT systems and database exports right now, and I actually just passed my Salesforce Admin cert last month.\"\n- \"One thing I should warn you about now is our legacy customer database is pretty messy. We have got duplicate accounts everywhere\"\n\n## Motivations & concerns\nConcerned about data quality and duplicate account records in their legacy database."
+    }
+  },
+  {
+    "entityKey": "DEC-0003",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (decisions), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "DEC-0003: Revised SDD sign-off schedule",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "context": "The original plan required sign-off by Friday, November 27, which coincides with the US Thanksgiving holiday.",
+        "rationale": "To maintain project momentum and accommodate office closures during the Thanksgiving holiday.",
+        "stakeholders": [
+          "Elena Rostova",
+          "David Thorne"
+        ],
+        "date_made": "2026-11-16"
+      },
+      "links": [
+        {
+          "type": "decided_by",
+          "target": "PERSON-0001"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "decisions",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Decision\nThe Solution Design Document (SDD) walkthrough will take place on Tuesday, November 24, with formal sign-off scheduled for Wednesday, November 25, before noon.\n\n## Consequences / follow-up\nThe team will proceed with the build phase as planned without losing momentum due to the holiday.\n\n## Evidence\n- \"we will shift the SDD walkthrough to Tuesday the twenty fourth and aim for sign off by Wednesday afternoon before everyone logs off for the holiday.\"\n- \"Yeah that works, just make sure it is on my calendar before noon Wednesday because I am catching a flight that afternoon.\""
+    }
+  },
+  {
+    "entityKey": "RISK-0001",
+    "action": "extract",
+    "by": "gabriel.ian.csanalosi@gmail.com",
+    "at": "2026-11-16T15:57:34.238Z",
+    "note": "Extracted from assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md (risks), run vHEW9pWgQXEzWuel7WH6",
+    "after": {
+      "name": "RISK-0001: Legacy data quality delays migration",
+      "version": 1,
+      "aliases": [],
+      "data": {
+        "likelihood": "high",
+        "severity": "medium",
+        "mitigation_strategy": "Priya will send an Excel matching checklist and formulas to help identify duplicates before the load."
+      },
+      "links": [
+        {
+          "type": "owner",
+          "target": "PERSON-0006"
+        },
+        {
+          "type": "threatens_deliverable",
+          "target": "SOWD-0005"
+        }
+      ],
+      "sources": [
+        {
+          "asset": "assets/transcripts/2026-11-16_transcript-1-project-kick-off-call-raw-export-30-m.md",
+          "stage": "risks",
+          "date": "2026-11-16"
+        }
+      ],
+      "body": "## Description\nThe client's legacy customer database contains many duplicate accounts and inconsistent data. If this data is not cleaned prior to the migration, it will cause issues or delays during the loading of records into Salesforce.\n\n## Evidence\n- \"One thing I should warn you about now is our legacy customer database is pretty messy. We have got duplicate accounts everywhere\"\n- \"Under the SOW, source data cleansing and deduplication sits on Vanguard's plate prior to us loading the files\""
+    }
+  }
+]
