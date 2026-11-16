@@ -1,0 +1,350 @@
+{
+  "AI-0001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "action_item"
+  },
+  "AI-0002": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "action_item"
+  },
+  "AI-0003": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "action_item"
+  },
+  "AI-0004": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "action_item"
+  },
+  "ASSUM-0001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "assumption"
+  },
+  "ASSUM-0002": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "assumption"
+  },
+  "C-001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "capability"
+  },
+  "C-002": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "capability"
+  },
+  "C-003": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "capability"
+  },
+  "C-004": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "capability"
+  },
+  "C-005": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "capability"
+  },
+  "COMP-0001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "component"
+  },
+  "COMP-0002": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "component"
+  },
+  "COMP-0003": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "component"
+  },
+  "COMP-0004": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "component"
+  },
+  "COMP-0005": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "component"
+  },
+  "COMP-0006": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "component"
+  },
+  "COMP-0007": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "component"
+  },
+  "DD-0001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "design_decision"
+  },
+  "DD-0002": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "design_decision"
+  },
+  "DD-0003": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "design_decision"
+  },
+  "DEC-0001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "decision"
+  },
+  "DEC-0002": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "decision"
+  },
+  "DEC-0003": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "decision"
+  },
+  "DEC-0004": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "decision"
+  },
+  "EPIC-0001": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "epic"
+  },
+  "EPIC-0002": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "epic"
+  },
+  "EPIC-0003": {
+    "status": "candidate",
+    "qualityScore": 0.4,
+    "researchRequested": false,
+    "entity_type": "epic"
+  },
+  "FEAT-0001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "feature"
+  },
+  "INIT-0001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "initiative"
+  },
+  "OPP-0001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "opportunity"
+  },
+  "OPP-0002": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "opportunity"
+  },
+  "OPP-0003": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "opportunity"
+  },
+  "OPP-0004": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "opportunity"
+  },
+  "P-0001": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "persona"
+  },
+  "P-0002": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "persona"
+  },
+  "P-0003": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "persona"
+  },
+  "PERSON-0001": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "person"
+  },
+  "PERSON-0002": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "person"
+  },
+  "PERSON-0003": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "person"
+  },
+  "PERSON-0004": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "person"
+  },
+  "PERSON-0005": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "person"
+  },
+  "PERSON-0006": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "person"
+  },
+  "PERSON-0007": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "person"
+  },
+  "PERSON-0008": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "person"
+  },
+  "PP-0001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "pain_point"
+  },
+  "PP-0002": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "pain_point"
+  },
+  "REL-0001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "release"
+  },
+  "REL-0002": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "release"
+  },
+  "RISK-0001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "risk"
+  },
+  "SOW-0001": {
+    "status": "candidate",
+    "qualityScore": 0.8,
+    "researchRequested": false,
+    "entity_type": "sow"
+  },
+  "SOWD-0001": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "sow_deliverable"
+  },
+  "SOWD-0002": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "sow_deliverable"
+  },
+  "SOWD-0003": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "sow_deliverable"
+  },
+  "SOWD-0004": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "sow_deliverable"
+  },
+  "SOWD-0005": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "sow_deliverable"
+  },
+  "SOWD-0006": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "sow_deliverable"
+  },
+  "SOWD-0007": {
+    "status": "candidate",
+    "qualityScore": 0.9,
+    "researchRequested": false,
+    "entity_type": "sow_deliverable"
+  }
+}
